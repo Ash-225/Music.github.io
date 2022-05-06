@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC WEBSITE</title>
+    <link rel="stylesheet" href="home.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.jfif" class="logo">
+            <ul>
+                <li class="Son"><a href="song.html">SONGS</a></li>
+                <li class="ABOUT"><a href="#">ABOUT</a></li>
+                <li class="SPE"><a href="#">SPECIFICATION</a></li>
+                <li class="CON"><a href="#">CONTECT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                    <h1>THE <br> REAL <br> SOUND</h1>
+            </div>
+                <div class="right-col">
+                    <p>click here to listen</p>
+                    <img src="5.jpg" alt="" id="icon">
+
+                    
+                 </div>
+        </div>
+
+    </div>
+    
+    <audio src="ho.wav" type="audio/wav" id="audio"> </audio>
+    <script>
+        var Mysong = document.getElementById("audio");
+        
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            if(Mysong.paused){
+                Mysong.play();
+                icon.src =  "5.jpg";
+
+            }
+            else{
+                Mysong.pause();
+                icon.src= "11.jpg";
+            }
+        }
+
+    </script>
+    <!-- <button data-modal-target="#about" type="button">ABOUT</button>
+    <div class="about" id="about">
+        <div class="A-header">
+            <div class="title">ABOUT</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="A-body">
+            THIS WEBSITE IS CREATED BY RANA AYUSH
+
+        </div>
+    </div>
+    <div id="ov"></div> -->
+    <!-- <script defer src="hom.js"></script> -->
+</body>
+</html>

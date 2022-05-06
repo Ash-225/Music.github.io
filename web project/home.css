@@ -1,0 +1,135 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 98px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+}
+
+.right-col{
+    float: right;
+    margin-left: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 18px;
+    color: aqua;
+    font-weight: 400;
+    margin-right: 15px;
+
+}
+
+#icon{
+    width: 80px;
+    cursor: pointer;
+
+}
+
+.about{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid  black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: aliceblue;
+    width: 500px;
+    max-width: 80%;
+}
+.about.active{
+    transform: translate(-50% ,-50%) scale(1);
+}
+.A-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.A-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.A-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.A-body{
+    padding: 10px 15px;
+}
+
+#ov{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+
+}
+
+#ov.active{
+    opacity: 1;
+    pointer-events: all;
+}
